@@ -55,10 +55,10 @@
             <p>Based on <a href="http://valloric.github.io/statblock5e/">Statblock5e</a> and <a
                     href="https://open5e.com/">Open5e</a></p>
             <br>
-            <button onclick="TrySaveFile()">Save Statblock</button>
-            <button onclick="LoadFilePrompt()">Load Statblock</button>
-            <button onclick="TryPrint()">Printable Block</button>
-            <button onclick="TryImage()">View Image</button>
+            <button onclick="TrySaveFile()">Salvar Statblock</button>
+            <button onclick="LoadFilePrompt()">Carregar Statblock</button>
+            <button onclick="TryPrint()">Bloco Imprimivel</button>
+            <button onclick="TryImage()">Ver Imagem</button>
             <button onclick="TryMarkdown()">View Markdown</button>
             <input id="file-upload" type="file" onChange="TryLoadFile();" hidden />
             <br><br>
@@ -162,7 +162,7 @@
                 <table id="type-form">
                     <tr>
                         <td>
-                            <label for="name-input">Name: <br><input id="name-input" type="text"
+                            <label for="name-input">Nome: <br><input id="name-input" type="text"
                                     value="Monster"></label>
                         </td>
                         <td>
@@ -360,25 +360,25 @@
                             </div>
                         </td>
                         <td id="conditions-form">
-                            <label for="conditions-input">Condition Immunities: </label><br>
+                            <label for="conditions-input">Imunidade a Condição: </label><br>
                             <select id="conditions-input">
-                                <option value="blinded">Blinded</option>
-                                <option value="charmed">Charmed</option>
-                                <option value="deafened">Deafened</option>
-                                <option value="exhaustion">Exhaustion</option>
-                                <option value="frightened">Frightened</option>
-                                <option value="grappled">Grappled</option>
-                                <option value="incapacitated">Incapacitated</option>
-                                <option value="invisible">Invisible</option>
-                                <option value="paralyzed">Paralyzed</option>
-                                <option value="petrified">Petrified</option>
-                                <option value="poisoned">Poisoned</option>
-                                <option value="prone">Prone</option>
-                                <option value="restrained">Restrained</option>
+                                <option value="blinded">Cego</option>
+                                <option value="charmed">Enfeitiçado</option>
+                                <option value="deafened">Surdo</option>
+                                <option value="exhaustion">Exausto</option>
+                                <option value="frightened">Amedrontado</option>
+                                <option value="grappled">Agarrado</option>
+                                <option value="incapacitated">Incapacitado</option>
+                                <option value="invisible">Invisivel</option>
+                                <option value="paralyzed">Paralisado</option>
+                                <option value="petrified">Petrificado</option>
+                                <option value="poisoned">Envenenado</option>
+                                <option value="prone">Caído</option>
+                                <option value="restrained">Impedido</option>
                                 <option value="stunned">Stunned</option>
-                                <option value="unconscious">Unconscious</option>
+                                <option value="unconscious">Inconciente</option>
                             </select>
-                            <button type="button" onclick="InputFunctions.AddConditionInput()">Immune</button>
+                            <button type="button" onclick="InputFunctions.AddConditionInput()">Imune</button>
                             <div id="conditions-input-section">
                                 <ul id="conditions-input-list" class="statblock-list"></ul>
                             </div>
