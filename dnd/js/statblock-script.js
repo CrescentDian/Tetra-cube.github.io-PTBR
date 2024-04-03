@@ -1239,7 +1239,7 @@ var GetVariablesFunctions = {
 
         if (preset.speed.hasOwnProperty("notes")) {
             mon.customSpeed = true;
-            mon.speedDesc = preset.speed.walk + " ft. (" + preset.speed.notes + ")";
+            mon.speedDesc = preset.speed.walk + " m. (" + preset.speed.notes + ")";
         } else {
             mon.customSpeed = false;
             mon.speedDesc = StringFunctions.GetSpeed();

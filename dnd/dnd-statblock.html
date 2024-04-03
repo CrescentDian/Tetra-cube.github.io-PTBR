@@ -227,7 +227,7 @@
                         <td>
                             <label for="armor-input">Armor Type: <br>
                                 <select id="armor-input" onchange="FormFunctions.ShowHideOtherArmor()">
-                                    <option value="none" selected>None</option>
+                                    <option value="none" selected>---</option>
                                     <option value="natural armor">Natural Armor</option>
                                     <option value="mage armor">Mage Armor</option>
                                     <option value="padded armor">Padded</option>
@@ -262,24 +262,24 @@
                 <table id="monster-speed-form">
                     <tr>
                         <td class="normal-speed-col"><label for="speed-input">Speed:<br><input type="number"
-                                    id="speed-input" min="0" max="995" step="5" value="30"> ft.</label></td>
+                                    id="speed-input" min="0" max="995" step="5" value="9"> m.</label></td>
                         <td class="normal-speed-col"><label for="burrow-speed-input">Burrow Speed:<br><input
                                     type="number" id="burrow-speed-input" min="0" max="995" step="5" value="0">
-                                ft.</label></td>
+                                m.</label></td>
                         <td class="normal-speed-col"><label for="climb-speed-input">Climb Speed:<br><input type="number"
-                                    id="climb-speed-input" min="0" max="995" step="5" value="0"> ft.</label></td>
+                                    id="climb-speed-input" min="0" max="995" step="5" value="0"> m.</label></td>
                         <td class="normal-speed-col">
                             <label for="fly-speed-input">Fly Speed:<br><input type="number" id="fly-speed-input" min="0"
                                     max="995" step="5" value="0" onchange="FormFunctions.ShowHideHoverBox()">
-                                ft.</label>
+                                m.</label>
                             <div id="hover-box-note" class="box-note"><label for="hover-input">(Hover: <input
                                         type="checkbox" id="hover-input">)</label></div>
                         </td>
                         <td class="normal-speed-col"><label for="swim-speed-input">Swim Speed:<br><input type="number"
-                                    id="swim-speed-input" min="0" max="995" step="5" value="0"> ft.</label></td>
+                                    id="swim-speed-input" min="0" max="995" step="5" value="0"> m.</label></td>
                         <td colspan="5" class="custom-speed-col">
                             <label for="custom-speed-prompt" style="width: 100%;">Speed: <input id="custom-speed-prompt"
-                                    type="text" value="30 ft."></label><br>
+                                    type="text" value="30 m."></label><br>
                         </td>
                         <td>
                             <br>
@@ -455,7 +455,7 @@
                                 </select>
                             </label>
                             <label for="telepathy-input" style="margin-left: .5rem;">Telepathy:<br><input type="number"
-                                    id="telepathy-input" min="0" max="995" step="5" value="0"> ft.</label>
+                                    id="telepathy-input" min="0" max="995" step="5" value="0"> m.</label>
                             <div>
                                 <input id="other-language-input" type="text" value="">
                             </div>
@@ -477,16 +477,16 @@
                         <td>
                             <label for="blindsight-input">Blindsight: <input type="number" id="blindsight-input" min="0"
                                     max="995" step="5" value="0" onchange="FormFunctions.ShowHideBlindBox()">
-                                ft.</label><br>
+                                m.</label><br>
                             <div id="blind-box-note" class="box-note"><label for="blindness-input">(Blind beyond: <input
                                         type="checkbox" id="blindness-input">)</label></div>
                         </td>
                         <td><label for="darkvision-input">Darkvision: <input type="number" id="darkvision-input" min="0"
-                                    max="995" step="5" value="0"> ft.</label></td>
+                                    max="995" step="5" value="0"> m.</label></td>
                         <td><label for="tremorsense-input">Tremorsense: <input type="number" id="tremorsense-input"
-                                    min="0" max="995" step="5" value="0"> ft.</label></td>
+                                    min="0" max="995" step="5" value="0"> m.</label></td>
                         <td><label for="truesight-input">Truesight: <input type="number" id="truesight-input" min="0"
-                                    max="995" step="5" value="0"> ft.</label></td>
+                                    max="995" step="5" value="0"> m.</label></td>
                     </tr>
                 </table>
                 <br>
