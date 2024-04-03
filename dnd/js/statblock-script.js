@@ -20,7 +20,7 @@ var mon = {
     customHP: false,
     customSpeed: false,
     hpText: "4 (1d8)",
-    speedDesc: "30 ft.",
+    speedDesc: "9 m.",
     strPoints: 10,
     dexPoints: 10,
     conPoints: 10,
@@ -1681,20 +1681,20 @@ var StringFunctions = {
     GetSpeed: function () {
         if (mon.customSpeed)
             return mon.speedDesc;
-        let speedsDisplayArr = [mon.speed + " ft."];
-        if (mon.burrowSpeed > 0) speedsDisplayArr.push("burrow " + mon.burrowSpeed + " ft.");
-        if (mon.climbSpeed > 0) speedsDisplayArr.push("climb " + mon.climbSpeed + " ft.");
-        if (mon.flySpeed > 0) speedsDisplayArr.push("fly " + mon.flySpeed + " ft." + (mon.hover ? " (hover)" : ""));
-        if (mon.swimSpeed > 0) speedsDisplayArr.push("swim " + mon.swimSpeed + " ft.");
+        let speedsDisplayArr = [mon.speed + " m."];
+        if (mon.burrowSpeed > 0) speedsDisplayArr.push("burrow " + mon.burrowSpeed + " m.");
+        if (mon.climbSpeed > 0) speedsDisplayArr.push("climb " + mon.climbSpeed + " m.");
+        if (mon.flySpeed > 0) speedsDisplayArr.push("fly " + mon.flySpeed + " m." + (mon.hover ? " (hover)" : ""));
+        if (mon.swimSpeed > 0) speedsDisplayArr.push("swim " + mon.swimSpeed + " m.");
         return speedsDisplayArr.join(", ")
     },
 
     GetSenses: function () {
         let sensesDisplayArr = [];
-        if (mon.blindsight > 0) sensesDisplayArr.push("blindsight " + mon.blindsight + " ft." + (mon.blind ? " (blind beyond this radius)" : ""));
-        if (mon.darkvision > 0) sensesDisplayArr.push("darkvision " + mon.darkvision + " ft.");
-        if (mon.tremorsense > 0) sensesDisplayArr.push("tremorsense " + mon.tremorsense + " ft.");
-        if (mon.truesight > 0) sensesDisplayArr.push("truesight " + mon.truesight + " ft.");
+        if (mon.blindsight > 0) sensesDisplayArr.push("blindsight " + mon.blindsight + " m." + (mon.blind ? " (blind beyond this radius)" : ""));
+        if (mon.darkvision > 0) sensesDisplayArr.push("darkvision " + mon.darkvision + " m.");
+        if (mon.tremorsense > 0) sensesDisplayArr.push("tremorsense " + mon.tremorsense + " m.");
+        if (mon.truesight > 0) sensesDisplayArr.push("truesight " + mon.truesight + " m.");
 
         // Passive Perception
         let ppData = ArrayFunctions.FindInList(mon.skills, "Perception"),
@@ -1785,7 +1785,7 @@ var StringFunctions = {
         }
 
         if (mon.telepathy > 0)
-            languageDisplayArr.push("telepathy " + mon.telepathy + " ft.");
+            languageDisplayArr.push("telepathy " + mon.telepathy + " m.");
         else if (languageDisplayArr.length == 0)
             languageDisplayArr.push("&mdash;");
 
