@@ -63,7 +63,7 @@
             <input id="file-upload" type="file" onChange="TryLoadFile();" hidden />
             <br><br>
             <div id="monster-select-form">Monster Presets: <select id="monster-select">
-                    <option value="">-Select-</option>
+                    <option value="">-Selecionar-</option>
                     <option value="default">Restore Default</option>
                 </select> <button type="button" id="monster-select-button" onclick="InputFunctions.GetPreset()">Use
                     Preset</button></div>
@@ -75,23 +75,23 @@
                     <hr class="orange-border" />
                     <div class="section-left">
                         <div class="creature-heading">
-                            <h1 id="monster-name">Monster</h1>
-                            <h2 id="monster-type">Size, type, alignment</h2>
+                            <h1 id="monster-name">Monstro</h1>
+                            <h2 id="monster-type">Tamanho, Tipo, Alinhamento</h2>
                         </div> <!-- creature heading -->
                         <svg height="5" width="100%" class="tapered-rule">
                             <polyline points="0,0 400,2.5 0,5"></polyline>
                         </svg>
                         <div class="top-stats">
                             <div class="property-line first">
-                                <h4>Armor Class</h4>
+                                <h4>Classe de Armadura</h4>
                                 <p id="armor-class"></p>
                             </div> <!-- property line -->
                             <div class="property-line">
-                                <h4>Hit Points</h4>
+                                <h4>Pontos de Vida</h4>
                                 <p id="hit-points"></p>
                             </div> <!-- property line -->
                             <div class="property-line last">
-                                <h4>Speed</h4>
+                                <h4>Deslocamento</h4>
                                 <p id="speed"></p>
                             </div> <!-- property line -->
                             <svg height="5" width="100%" class="tapered-rule">
@@ -99,11 +99,11 @@
                             </svg>
                             <div class="scores">
                                 <div class="scores-strength">
-                                    <h4>STR</h4>
+                                    <h4>FOR</h4>
                                     <p id="strpts"></p>
                                 </div> <!-- scores strength -->
                                 <div class="scores-dexterity">
-                                    <h4>DEX</h4>
+                                    <h4>DES</h4>
                                     <p id="dexpts"></p>
                                 </div> <!-- scores dexterity -->
                                 <div class="scores-constitution">
@@ -115,11 +115,11 @@
                                     <p id="intpts"></p>
                                 </div> <!-- scores intelligence -->
                                 <div class="scores-wisdom">
-                                    <h4>WIS</h4>
+                                    <h4>SAB</h4>
                                     <p id="wispts"></p>
                                 </div> <!-- scores wisdom -->
                                 <div class="scores-charisma">
-                                    <h4>CHA</h4>
+                                    <h4>CAR</h4>
                                     <p id="chapts"></p>
                                 </div> <!-- scores charisma -->
                             </div> <!-- scores -->
@@ -128,7 +128,7 @@
                             </svg>
                             <div id="properties-list"></div>
                             <div id="challenge-rating-line" class="property-line last">
-                                <h4>Challenge</h4>
+                                <h4>Nível de Desafio</h4>
                                 <p id="challenge-rating"></p>
                             </div> <!-- property line -->
                         </div> <!-- top stats -->
@@ -151,9 +151,9 @@
             <div class="options">
                 <form>
                     <label for="1col-input"><input id="1col-input" type="radio" name="columns-input" value="1col"
-                            checked> One Column</label>
+                            checked> Uma Coluna</label>
                     <label for="2col-input" style="margin-left: .5rem;"><input id="2col-input" type="radio"
-                            name="columns-input" value="2col"> Two Columns</label>
+                            name="columns-input" value="2col"> Duas Colunas</label>
                 </form>
                 <button id="left-separator-button" type="button" onclick="UpdateBlockFromVariables(1)">&lt;&lt;</button>
                 <button type="button" onclick="UpdateBlockFromVariables(0)">Update Statblock</button>
@@ -166,35 +166,37 @@
                                     value="Monster"></label>
                         </td>
                         <td>
-                            <label for="size-input">Size: <br>
+                            <label for="size-input">Tamanho: <br>
                                 <select id="size-input">
-                                    <option value="tiny">Tiny</option>
-                                    <option value="small">Small</option>
-                                    <option value="medium" selected="selected">Medium</option>
-                                    <option value="large">Large</option>
-                                    <option value="huge">Huge</option>
-                                    <option value="gargantuan">Gargantuan</option>
+                                    <option value="tiny">Miúdo</option>
+                                    <option value="small">Pequeno</option>
+                                    <option value="medium" selected="selected">Médio</option>
+                                    <option value="large">Grande</option>
+                                    <option value="huge">Enorme</option>
+                                    <option value="gargantuan">Imenso</option>
+                                    <option vaule="colossal">Colossal</option>
+                                    <option vaule="titanic">Titânico</option>
                                 </select>
                             </label>
                         </td>
                         <td>
-                            <label for="type-input">Type: <br>
+                            <label for="type-input">Tipo: <br>
                                 <select id="type-input" onchange="FormFunctions.ShowHideTypeOther()">
-                                    <option value="aberration">Aberration</option>
-                                    <option value="beast">Beast</option>
+                                    <option value="aberration">Aberração</option>
+                                    <option value="beast">Besta</option>
                                     <option value="celestial">Celestial</option>
-                                    <option value="construct">Construct</option>
-                                    <option value="dragon">Dragon</option>
+                                    <option value="construct">Construto</option>
+                                    <option value="dragon">Dragão</option>
                                     <option value="elemental">Elemental</option>
                                     <option value="fey">Fey</option>
-                                    <option value="fiend">Fiend</option>
-                                    <option value="giant">Giant</option>
-                                    <option value="humanoid" selected>Humanoid</option>
-                                    <option value="monstrosity">Monstrosity</option>
-                                    <option value="ooze">Ooze</option>
-                                    <option value="plant">Plant</option>
-                                    <option value="undead">Undead</option>
-                                    <option value="*">Other</option>
+                                    <option value="fiend">Demonio</option>
+                                    <option value="giant">Gigante</option>
+                                    <option value="humanoid" selected>Humanoide</option>
+                                    <option value="monstrosity">Monstruosidade</option>
+                                    <option value="ooze">Lodos</option>
+                                    <option value="plant">Plantas</option>
+                                    <option value="undead">Morto-Vivo</option>
+                                    <option value="*">Outros</option>
                                 </select>
                             </label>
                             <div><input id="other-type-input" type="text" value="swarm of Tiny beasts"></div>
@@ -204,7 +206,7 @@
                                 <input id="tag-input" type="text"></label>
                         </td>
                         <td>
-                            <label for="alignment-input">Alignment: <br>
+                            <label for="alignment-input">Alinhamento: <br>
                                 <input id="alignment-input" type="text" value="any alignment"></label>
                         </td>
                     </tr>
@@ -317,12 +319,12 @@
                         <td id="sthrows-form">
                             <label for="sthrows-input">Saving Throws:</label><br>
                             <select id="sthrows-input">
-                                <option value="str">Strength</option>
-                                <option value="dex">Dexterity</option>
-                                <option value="con">Constitution</option>
-                                <option value="int">Intelligence</option>
-                                <option value="wis">Wisdom</option>
-                                <option value="cha">Charisma</option>
+                                <option value="str">Força</option>
+                                <option value="dex">Destreza</option>
+                                <option value="con">Constituição</option>
+                                <option value="int">Inteligencia</option>
+                                <option value="wis">Sabedoria</option>
+                                <option value="cha">Carisma</option>
                             </select>
                             <button type="button" onclick="InputFunctions.AddSthrowInput()">Proficient</button>
                             <div id="sthrows-input-section">
@@ -330,28 +332,28 @@
                             </div>
                         </td>
                         <td id="skills-form">
-                            <label for="skills-input">Skills:</label><br>
+                            <label for="skills-input">Perícias:</label><br>
                             <select id="skills-input">
-                                <option value="acrobatics">Acrobatics</option>
-                                <option value="animal Handling">Animal Handling</option>
-                                <option value="arcana">Arcana</option>
-                                <option value="athletics">Athletics</option>
-                                <option value="deception">Deception</option>
-                                <option value="history">History</option>
-                                <option value="insight">Insight</option>
-                                <option value="intimidation">Intimidation</option>
-                                <option value="investigation">Investigation</option>
-                                <option value="medicine">Medicine</option>
-                                <option value="nature">Nature</option>
-                                <option value="perception">Perception</option>
-                                <option value="performance">Performance</option>
-                                <option value="persuasion">Persuasion</option>
-                                <option value="religion">Religion</option>
-                                <option value="sleight of Hand">Sleight of Hand</option>
-                                <option value="stealth">Stealth</option>
-                                <option value="survival">Survival</option>
+                                <option value="acrobatics">Acrobacia</option>
+                                <option value="arcana">Arcanismo</option>
+                                <option value="athletics">Atletismo</option>
+                                <option value="performance">Atuação</option>
+                                <option value="deception">Blefar</option>
+                                <option value="stealth">Furtividade</option>
+                                <option value="history">História</option>
+                                <option value="intimidation">Intimidação</option>
+                                <option value="insight">Intuição</option>
+                                <option value="investigation">Investigação</option>
+                                <option value="animal Handling">Lidar com Animais</option>
+                                <option value="medicine">Medicina</option>
+                                <option value="nature">Natureza</option>
+                                <option value="perception">Percepção</option>
+                                <option value="persuasion">Persuasão</option>
+                                <option value="religion">Religião</option>
+                                <option value="sleight of Hand">Prestidigitação</option>
+                                <option value="survival">Sobrevivencia</option>
                             </select>
-                            <button type="button" onclick="InputFunctions.AddSkillInput()">Proficient</button>
+                            <button type="button" onclick="InputFunctions.AddSkillInput()">Proeficiente</button>
                             <button type="button" onclick="InputFunctions.AddSkillInput(' (ex)')">Expert</button>
                             <div id="skills-input-section">
                                 <ul id="skills-input-list" class="statblock-list"></ul>
