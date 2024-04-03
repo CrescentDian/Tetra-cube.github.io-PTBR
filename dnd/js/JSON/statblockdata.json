@@ -140,24 +140,31 @@
 		"unconscious"
 	],
 	"sizes": {
-		"tiny": {
+		"miúdo": {
 			"hitDie": 4
 		},
-		"small": {
+		"pequeno": {
 			"hitDie": 6
 		},
-		"medium": {
+		"médio": {
 			"hitDie": 8
 		},
-		"large": {
+		"grande": {
 			"hitDie": 10
 		},
-		"huge": {
+		"enorme": {
 			"hitDie": 12
 		},
-		"gargantuan": {
+		"imenso": {
+			"hitDie": 20
+		},
+		"colossal": {
+			"hitDie": 20
+		},
+		"titanico": {
 			"hitDie": 20
 		}
+
 	},
 	"types": [
 		"aberration",
