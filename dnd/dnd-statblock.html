@@ -59,12 +59,12 @@
             <button onclick="LoadFilePrompt()">Carregar Statblock</button>
             <button onclick="TryPrint()">Bloco Imprimivel</button>
             <button onclick="TryImage()">Ver Imagem</button>
-            <button onclick="TryMarkdown()">View Markdown</button>
+            <button onclick="TryMarkdown()">Ver Markdown</button>
             <input id="file-upload" type="file" onChange="TryLoadFile();" hidden />
             <br><br>
-            <div id="monster-select-form">Monster Presets: <select id="monster-select">
+            <div id="monster-select-form">Monstro Pré-definido: <select id="monster-select">
                     <option value="">-Selecionar-</option>
-                    <option value="default">Restore Default</option>
+                    <option value="default">Limpar</option>
                 </select> <button type="button" id="monster-select-button" onclick="InputFunctions.GetPreset()">Use
                     Preset</button></div>
             <br>
@@ -216,11 +216,11 @@
                     <tr>
                         <td></td>
                         <td>
-                            <div id="hitdice-input-prompt"><label for="hitdice-input">Hit Dice: <br><input type="number"
+                            <div id="hitdice-input-prompt"><label for="hitdice-input">Dado de Vida: <br><input type="number"
                                         id="hitdice-input" min="1" max="99" value="5"></label></div>
-                            <div id="hp-text-input-prompt"><label for="hp-text-input">Hit Points:<br><input
+                            <div id="hp-text-input-prompt"><label for="hp-text-input">Pontos de Vida:<br><input
                                         id="hp-text-input" value="4 (1d8)"></label></div>
-                            <div id="custom-hp-box-prompt" class="box-note"><label for="custom-hp-input">(Custom HP:
+                            <div id="custom-hp-box-prompt" class="box-note"><label for="custom-hp-input">(Vida Customizada:
                                     <input id="custom-hp-input" type="checkbox"
                                         onchange="FormFunctions.ShowHideCustomHP()">)</label></div>
                         </td>
@@ -248,10 +248,10 @@
                                         id="shield-input" type="checkbox">)</label></div>
                         </td>
                         <td colspan="2">
-                            <div id="natarmor-prompt"><label for="natarmor-input">Natural Armor Bonus:<br><input
+                            <div id="natarmor-prompt"><label for="natarmor-input">Bônus de Armadura Natural:<br><input
                                         type="number" id="natarmor-input" min="1" max="99" value="3"></label></div>
                             <div id="otherarmor-prompt">
-                                <label for="otherarmor-input">Description: <input id="otherarmor-input" type="text"
+                                <label for="otherarmor-input">Descrição: <input id="otherarmor-input" type="text"
                                         value="10 (armor)"></label><br>
                                 <div id="otherarmor-box-note" class="box-note"><i>Use _ to italicize</i></div>
                             </div>
